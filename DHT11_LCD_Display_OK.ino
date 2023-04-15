@@ -1,19 +1,14 @@
 #define BLYNK_PRINT Serial  
 #include <SPI.h>
-//#include <ESP8266WiFi.h>
-//#include <BlynkSimpleEsp8266.h>
 #include <DHT.h>
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
-//char auth[] = "fGv3hZt9CKtF53GDB-dQuvfKXGTSs9-k"; //Enter the Auth code which was send by Blink
 
-//char ssid[] = "AP@net";  //Enter your WIFI Name
-//char pass[] = "";  //Enter your WIFI Password
 
 #define DHTPIN 18          // Digital pin 3
 #define DHTTYPE DHT11
-//#define DHTTYPE DHT22     
+ 
 
 DHT dht(DHTPIN, DHTTYPE);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
